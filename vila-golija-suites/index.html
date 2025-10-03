@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vila Golija Suites - Отдых на высоте</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Vila Golija Suites</h1>
+                </div>
+                <nav class="nav">
+                    <div class="nav-links">
+                        <div class="language-switcher">
+                            <button class="lang-btn active" data-lang="ru">РУ</button>
+                            <button class="lang-btn" data-lang="en">EN</button>
+                        </div>
+                        <div class="contact-info">
+                            <span class="phone">+7 (999) 123-45-67</span>
+                            <span class="email">info@vilagolija.com</span>
+                        </div>
+                    </div>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Блок 1: Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title" data-lang-key="hero-title">VILA GOLIJA SUITES</h1>
+            <p class="hero-subtitle" data-lang-key="hero-subtitle">Отдых на высоте</p>
+            <button class="cta-button" data-lang-key="book-now" onclick="scrollToBooking()">Забронировать</button>
+        </div>
+    </section>
+
+    <!-- Блок 2: Уникальное предложение -->
+    <section class="unique-offer">
+        <div class="unique-offer-overlay"></div>
+        <div class="container">
+            <div class="unique-offer-content">
+                <h2 class="unique-offer-title" data-lang-key="unique-title">Поднимите свой отдых на новый уровень буквально</h2>
+                <p class="unique-offer-desc" data-lang-key="unique-desc">Подъемник номер 5 в 10м от вашей виллы</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок 3: О вашей вилле -->
+    <section class="about-villa">
+        <div class="container">
+            <h2 class="section-title" data-lang-key="about-title">О вашей вилле</h2>
+            <div class="about-content">
+                <div class="features">
+                    <div class="feature-item" data-feature="kitchen">
+                        <i class="fas fa-utensils"></i>
+                        <span data-lang-key="kitchen">Кухня</span>
+                        <div class="feature-details" data-lang-key="kitchen-desc">
+                            Полностью оборудованная кухня с современной техникой
+                        </div>
+                    </div>
+                    <div class="feature-item" data-feature="wifi">
+                        <i class="fas fa-wifi"></i>
+                        <span data-lang-key="wifi">Wi-Fi</span>
+                        <div class="feature-details" data-lang-key="wifi-desc">
+                            Высокоскоростной беспроводной интернет на всей территории
+                        </div>
+                    </div>
+                    <div class="feature-item" data-feature="spa">
+                        <i class="fas fa-spa"></i>
+                        <span data-lang-key="spa">SPA</span>
+                        <div class="feature-details" data-lang-key="spa-desc">
+                            Доступ к спа-зоне с сауной и джакузи
+                        </div>
+                    </div>
+                    <div class="feature-item" data-feature="parking">
+                        <i class="fas fa-parking"></i>
+                        <span data-lang-key="parking">Парковка</span>
+                        <div class="feature-details" data-lang-key="parking-desc">
+                            Бесплатная охраняемая парковка для гостей
+                        </div>
+                    </div>
+                    <div class="feature-item" data-feature="transfer">
+                        <i class="fas fa-shuttle-van"></i>
+                        <span data-lang-key="transfer">Трансфер</span>
+                        <div class="feature-details" data-lang-key="transfer-desc">
+                            Трансфер от аэропорта и обратно для VIP гостей
+                        </div>
+                    </div>
+                </div>
+                <div class="apartments-grid">
+                    <!-- Карточка 1 -->
+                    <div class="apartment-card" onclick="window.location.href='apartments/apartment1.html'">
+                        <div class="apartment-category guest-choice" data-lang-key="guest-choice">Выбор гостей</div>
+                        <div class="apartment-overlay"></div>
+                        <div class="apartment-info">
+                            <h3 class="apartment-name" data-lang-key="apartment1-name">Волшебный вид</h3>
+                            <p class="apartment-desc" data-lang-key="apartment1-desc">Двухместный апартамент с кухней и балконом с видом на горы 33 кв.м.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Карточка 2 -->
+                    <div class="apartment-card" onclick="window.location.href='apartments/apartment2.html'">
+                        <div class="apartment-category family" data-lang-key="family">Семейный</div>
+                        <div class="apartment-overlay"></div>
+                        <div class="apartment-info">
+                            <h3 class="apartment-name" data-lang-key="apartment2-name">Больше лучше</h3>
+                            <p class="apartment-desc" data-lang-key="apartment2-desc">Апартамент на 4 человека с кухней и балконом с видом на горы 41 кв.м.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Карточка 3 -->
+                    <div class="apartment-card" onclick="window.location.href='apartments/apartment3.html'">
+                        <div class="apartment-category comfort" data-lang-key="comfort">Комфорт</div>
+                        <div class="apartment-overlay"></div>
+                        <div class="apartment-info">
+                            <h3 class="apartment-name" data-lang-key="apartment3-name">Уют в горах</h3>
+                            <p class="apartment-desc" data-lang-key="apartment3-desc">Двухместный апартамент с кухней 33 кв.м.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Карточка 4 -->
+                    <div class="apartment-card" onclick="window.location.href='apartments/apartment4.html'">
+                        <div class="apartment-category mountain-view" data-lang-key="mountain-view">Вид на горы</div>
+                        <div class="apartment-overlay"></div>
+                        <div class="apartment-info">
+                            <h3 class="apartment-name" data-lang-key="apartment4-name">Горные вершины</h3>
+                            <p class="apartment-desc" data-lang-key="apartment4-desc">Двухместный апартамент с панорамным видом на горы 35 кв.м.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Карточка 5 -->
+                    <div class="apartment-card" onclick="window.location.href='apartments/apartment5.html'">
+                        <div class="apartment-category vip" data-lang-key="vip">VIP</div>
+                        <div class="apartment-overlay"></div>
+                        <div class="apartment-info">
+                            <h3 class="apartment-name" data-lang-key="apartment5-name">Лучше не бывает</h3>
+                            <p class="apartment-desc" data-lang-key="apartment5-desc">Двухместный апартамент с кухней и балконом с видом на горы 41 кв.м. Трансфер от аэропорта.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Карточка 6 -->
+                    <div class="apartment-card" onclick="window.location.href='apartments/apartment6.html'">
+                        <div class="apartment-category economy" data-lang-key="economy">Эконом</div>
+                        <div class="apartment-overlay"></div>
+                        <div class="apartment-info">
+                            <h3 class="apartment-name" data-lang-key="apartment6-name">Бюджетный вариант</h3>
+                            <p class="apartment-desc" data-lang-key="apartment6-desc">Двухместный апартамент 33 кв.м.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок 4: Форма бронирования -->
+    <section class="booking" id="booking">
+        <div class="container">
+            <h2 class="section-title" data-lang-key="booking-title">Заявка на бронирование</h2>
+            <div class="booking-form-container">
+                <form id="booking-form" class="booking-form">
+                    <!-- Шаг 1: Контактные данные -->
+                    <div class="form-step active" id="step-1">
+                        <h3 data-lang-key="step1-title">Контактные данные</h3>
+                        <div class="form-group">
+                            <input type="text" id="last-name" name="last-name" required>
+                            <label for="last-name" data-lang-key="last-name">Фамилия</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="first-name" name="first-name" required>
+                            <label for="first-name" data-lang-key="first-name">Имя</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" required>
+                            <label for="phone" data-lang-key="phone">Номер телефона</label>
+                        </div>
+                        <div class="form-navigation">
+                            <button type="button" class="next-btn" data-lang-key="next" onclick="nextStep(1)">Далее</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Шаг 2: Выбор апартамента -->
+                    <div class="form-step" id="step-2">
+                        <h3 data-lang-key="step2-title">Выбор апартамента</h3>
+                        <div class="apartment-options">
+                            <div class="apartment-option">
+                                <input type="radio" id="apartment1" name="apartment" value="Волшебный вид" required>
+                                <label for="apartment1">
+                                    <span class="option-name" data-lang-key="apartment1-name">Волшебный вид</span>
+                                    <span class="option-desc" data-lang-key="apartment1-desc">Двухместный апартамент с кухней и балконом с видом на горы 33 кв.м.</span>
+                                </label>
+                            </div>
+                            <div class="apartment-option">
+                                <input type="radio" id="apartment2" name="apartment" value="Больше лучше" required>
+                                <label for="apartment2">
+                                    <span class="option-name" data-lang-key="apartment2-name">Больше лучше</span>
+                                    <span class="option-desc" data-lang-key="apartment2-desc">Апартамент на 4 человека с кухней и балконом с видом на горы 41 кв.м.</span>
+                                </label>
+                            </div>
+                            <div class="apartment-option">
+                                <input type="radio" id="apartment3" name="apartment" value="Уют в горах" required>
+                                <label for="apartment3">
+                                    <span class="option-name" data-lang-key="apartment3-name">Уют в горах</span>
+                                    <span class="option-desc" data-lang-key="apartment3-desc">Двухместный апартамент с кухней 33 кв.м.</span>
+                                </label>
+                            </div>
+                            <div class="apartment-option">
+                                <input type="radio" id="apartment4" name="apartment" value="Горные вершины" required>
+                                <label for="apartment4">
+                                    <span class="option-name" data-lang-key="apartment4-name">Горные вершины</span>
+                                    <span class="option-desc" data-lang-key="apartment4-desc">Двухместный апартамент с панорамным видом на горы 35 кв.м.</span>
+                                </label>
+                            </div>
+                            <div class="apartment-option">
+                                <input type="radio" id="apartment5" name="apartment" value="Лучше не бывает" required>
+                                <label for="apartment5">
+                                    <span class="option-name" data-lang-key="apartment5-name">Лучше не бывает</span>
+                                    <span class="option-desc" data-lang-key="apartment5-desc">Двухместный апартамент с кухней и балконом с видом на горы 41 кв.м. Трансфер от аэропорта.</span>
+                                </label>
+                            </div>
+                            <div class="apartment-option">
+                                <input type="radio" id="apartment6" name="apartment" value="Бюджетный вариант" required>
+                                <label for="apartment6">
+                                    <span class="option-name" data-lang-key="apartment6-name">Бюджетный вариант</span>
+                                    <span class="option-desc" data-lang-key="apartment6-desc">Двухместный апартамент 33 кв.м.</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-navigation">
+                            <button type="button" class="prev-btn" data-lang-key="prev" onclick="prevStep(2)">Назад</button>
+                            <button type="button" class="next-btn" data-lang-key="next" onclick="nextStep(2)">Далее</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Шаг 3: Даты -->
+                    <div class="form-step" id="step-3">
+                        <h3 data-lang-key="step3-title">Выбор дат</h3>
+                        <div class="calendar-container">
+                            <div id="booking-calendar"></div>
+                        </div>
+                        <div class="selected-dates">
+                            <p data-lang-key="check-in">Заезд: <span id="check-in-date">--/--/----</span></p>
+                            <p data-lang-key="check-out">Выезд: <span id="check-out-date">--/--/----</span></p>
+                        </div>
+                        <div class="form-navigation">
+                            <button type="button" class="prev-btn" data-lang-key="prev" onclick="prevStep(3)">Назад</button>
+                            <button type="button" class="next-btn" data-lang-key="next" onclick="nextStep(3)">Далее</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Шаг 4: Подтверждение -->
+                    <div class="form-step" id="step-4">
+                        <h3 data-lang-key="step4-title">Подтверждение бронирования</h3>
+                        <div class="confirmation-details">
+                            <div class="detail-item">
+                                <span data-lang-key="last-name">Фамилия:</span>
+                                <span id="confirm-last-name"></span>
+                            </div>
+                            <div class="detail-item">
+                                <span data-lang-key="first-name">Имя:</span>
+                                <span id="confirm-first-name"></span>
+                            </div>
+                            <div class="detail-item">
+                                <span>Email:</span>
+                                <span id="confirm-email"></span>
+                            </div>
+                            <div class="detail-item">
+                                <span data-lang-key="phone">Телефон:</span>
+                                <span id="confirm-phone"></span>
+                            </div>
+                            <div class="detail-item">
+                                <span data-lang-key="apartment">Апартамент:</span>
+                                <span id="confirm-apartment"></span>
+                            </div>
+                            <div class="detail-item">
+                                <span data-lang-key="check-in">Заезд:</span>
+                                <span id="confirm-check-in"></span>
+                            </div>
+                            <div class="detail-item">
+                                <span data-lang-key="check-out">Выезд:</span>
+                                <span id="confirm-check-out"></span>
+                            </div>
+                        </div>
+                        <div class="form-navigation">
+                            <button type="button" class="prev-btn" data-lang-key="prev" onclick="prevStep(4)">Назад</button>
+                            <button type="submit" class="submit-btn" data-lang-key="submit">Отправить заявку</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Модальное окно после отправки формы -->
+    <div id="success-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3 data-lang-key="success-title">Мы ответим в ближайшее время</h3>
+            <p data-lang-key="success-desc">Спасибо за вашу заявку! Наш менеджер свяжется с вами в течение 24 часов.</p>
+            <div class="contact-links">
+                <a href="https://t.me/vilagolija" class="contact-link telegram">
+                    <i class="fab fa-telegram"></i>
+                    <span>Telegram</span>
+                </a>
+                <a href="https://wa.me/79991234567" class="contact-link whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Vila Golija Suites</h3>
+                    <p data-lang-key="footer-desc">Отдых на высоте в самом сердце гор</p>
+                </div>
+                <div class="footer-contact">
+                    <h4 data-lang-key="contact">Контакты</h4>
+                    <p><i class="fas fa-phone"></i> +7 (999) 123-45-67</p>
+                    <p><i class="fas fa-envelope"></i> info@vilagolija.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> <span data-lang-key="address">Горный переулок, 5, Голия</span></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Vila Golija Suites. <span data-lang-key="rights">Все права защищены.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/language.js"></script>
+    <script src="js/calendar.js"></script>
+    <script src="js/booking.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
